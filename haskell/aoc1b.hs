@@ -1,4 +1,4 @@
-module AOC1A {-  (main) -} 
+module AOC1B 
 where 
 
 main = 
@@ -10,5 +10,13 @@ parse :: String -> Integer
 parse ('+':t) = read t
 parse x = read x
 
-solution :: [Integer] -> Integer
-solution = sum 
+twice :: [Integer] -> [Integer] -> Maybe Integer
+twice vis [] = Nothing
+twice vis (h:t) = 
+  if h `elem` vis then Just h
+  else twice (h:vis) t
+
+
+
+solution :: [Integer] -> Maybe Integer
+solution  = (twice []) . (scanl (+) 0) . cycle
