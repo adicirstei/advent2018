@@ -22,3 +22,4 @@ executable aoc
   other-modules: AOC1A
               ,  AOC1B 
               ,  AOC2A
+              ,  AOC2B
