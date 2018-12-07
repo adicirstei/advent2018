@@ -1,11 +1,12 @@
-/target
-/classes
-/checkouts
+clojure/target
+clojure/classes
+clojure/checkouts
 pom.xml
 pom.xml.asc
 *.jar
 *.class
-/.lein-*
-/.nrepl-port
+clojure/.lein-*
+clojure/.nrepl-port
+clojure/.idea
 .stack-work
 AOC*.txt
