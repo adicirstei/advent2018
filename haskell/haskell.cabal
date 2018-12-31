@@ -19,8 +19,5 @@ executable aoc
   build-depends:       base >= 4.7 && < 5
                     ,   containers
 
-  other-modules: AOC1A
-              ,  AOC1B 
-              ,  AOC2A
-              ,  AOC2B
-              ,  AOC3A
+  other-modules: Parser
+                ,AOC4A
